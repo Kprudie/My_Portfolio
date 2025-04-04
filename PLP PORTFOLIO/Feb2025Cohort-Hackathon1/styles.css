@@ -1,0 +1,162 @@
+/* Color Palette */
+:root {
+    --dark-green: #1C3F31;
+    --muted-olive: #3F4D3B;
+    --warm-beige: #F5E8D7;
+    --burnt-orange: #E58E26;
+    --deep-black: #0F0F0F;
+    --gold-accent: #D4A373;
+    --soft-white: #FFF8F2;
+    --whatsapp-green: #25D366;
+    --whatsapp-hover: #1da851;
+    --discord-blue: #5865F2;
+    --discord-hover: #4752c4;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--warm-beige);
+    color: var(--deep-black);
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: var(--dark-green);
+    color: var(--soft-white);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+nav a {
+    color: var(--gold-accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--burnt-orange);
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: var(--soft-white);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--dark-green);
+}
+
+h2 {
+    border-bottom: 3px solid var(--burnt-orange);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--muted-olive);
+}
+
+/* Buttons */
+button {
+    background-color: var(--burnt-orange);
+    color: var(--soft-white);
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--gold-accent);
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid var(--muted-olive);
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type="submit"] {
+    background-color: var(--burnt-orange);
+    color: var(--soft-white);
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: var(--gold-accent);
+}
+
+/* Contact Links */
+.contact-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+/* WhatsApp Button */
+.whatsapp {
+    background-color: var(--whatsapp-green);
+}
+
+.whatsapp:hover {
+    background-color: var(--whatsapp-hover);
+}
+
+/* Discord Button */
+.discord {
+    background-color: var(--discord-blue);
+}
+
+.discord:hover {
+    background-color: var(--discord-hover);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: var(--dark-green);
+    color: var(--soft-white);
+    padding: 10px;
+}
